@@ -1,10 +1,11 @@
 use crate::helpers;
 use std::io;
 
+const DAY_NUM: u8 = 0;
+
 pub fn run(data_type: String) -> io::Result<()> {
-    let day_num: u8 = 0;
-    println!("This is Day {}", day_num);
-    let in_lines = helpers::data_reader::read_data(day_num, data_type)?;
+    println!("This is Day {}", DAY_NUM);
+    let in_lines = helpers::data_reader::read_data(&DAY_NUM, data_type)?;
     part_one(&in_lines);
     part_two(&in_lines);
 
@@ -12,14 +13,16 @@ pub fn run(data_type: String) -> io::Result<()> {
 }
 
 fn part_one(in_lines: &[String]) {
-    println!("This is Part 1!");
-    for line in in_lines {
-        println!("{line}");
+    let ans: String = "".to_string();
+    for _ in in_lines {
+        {}
     }
+    println!("Part 1 Answer: {ans}");
 }
 fn part_two(in_lines: &[String]) {
-    println!("This is Part 2!");
-    for line in in_lines {
-        println!("{line}");
+    let ans: String = "".to_string();
+    for _ in in_lines {
+        {}
     }
+    println!("Part 2 Answer: {ans}");
 }
